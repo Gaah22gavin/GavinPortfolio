@@ -1,0 +1,10 @@
+export {default as Navbar} from './Navbar/Navbar';
+export {default as Banner} from './Banner/Banner';
+export {default as About} from './About/About';
+export {default as Services} from './Services/SERVICES';
+export{default as Skills} from './Skills/Skills';
+export{default as Projects} from './Projects/Projects';
+export{default as Clients} from './Clients/Clients';
+export{default as Contact} from './Contact/Contact';
+export{default as Footer} from './Footer/Footer';
+export{default as MyGallery} from "./MyGallery/MyGallery";

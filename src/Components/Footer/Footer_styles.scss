@@ -1,0 +1,146 @@
+$bold: "titi-bold";
+$semi-bold: "titi-semibold";
+$regular: "titi-regular";
+$light: "titi-light";
+$italic: "titi-italic";
+
+.Footer {
+    background-color: #FFDD99;
+    padding: 30px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .social_links {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+
+        h2 {
+            width: 100%;
+            font-family: $bold;
+            font-size: 24px;
+            color: black;
+            margin: 0px 0px 10px;
+            text-align: center;
+        }
+
+        .icon_box {
+            width: 75%;
+            margin: 10px auto;
+
+            i {
+                .icon {
+                    color: #72107a;
+                    font-size: 30px;
+                    margin: 0px 5px;
+                }
+            }
+        }
+
+
+    }
+
+    .More_Project {
+        h2 {
+            width: 100%;
+            font-family: $bold;
+            font-size: 24px;
+            color: black;
+            margin: 0px 0px 10px;
+            text-align: center;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                .git {
+                    color: #72107a;
+                    font-size: 30px;
+                    margin: 0px 5px;
+                }
+            }
+
+            p {
+                font-family: $regular;
+                font-size: 14px;
+                a{
+                    color: black;
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: 768px) {
+    .Footer {
+        padding: 6% 0px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .social_links {
+            h2 {
+                font-size: 25px;
+            }
+
+            i {
+                .icon {
+                    font-size: 35px;
+                }
+            }
+        }
+
+        .More_Project {
+
+            h2 {
+                font-size: 25px;
+                margin: 0px 0px 20px;
+            }
+
+            span {
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1280px) {
+
+    .Footer {
+        padding: 6% 0px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .social_links {
+            h2 {
+                font-size: 25px;
+            }
+        }
+
+        .More_Project {
+
+            h2 {
+                font-size: 25px;
+                margin: 0px 0px 25px;
+            }
+
+            span {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

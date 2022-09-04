@@ -1,0 +1,199 @@
+$bold: "titi-bold";
+$semi-bold: "titi-semibold";
+$regular: "titi-regular";
+$light: "titi-light";
+
+
+.Services {
+    padding: 30px 25px;
+    background-color: #17C2A4;
+
+    span {
+        font-family: $bold;
+
+        h2 {
+            text-align: center;
+            margin: 0px 0px 5px;
+            font-size: 28px;
+            color: rgb(247, 238, 238);
+        }
+
+        hr {
+            width: 20%;
+            padding: 1px;
+            margin: 4px auto;
+            background-color: rgb(247, 238, 238);
+            border: none;
+        }
+    }
+
+    p {
+        font-family: $regular;
+        font-size: 16px;
+        margin: 15px 0px 25px;
+        text-align: center;
+        color: rgb(247, 238, 238);
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+        .box {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 30px;
+            padding: 27px;
+            background: linear-gradient(to bottom, #5D5FEF, #993C7F);
+            color: white;
+            margin: 20px 0px;
+
+            img {
+                width: 50%;
+                object-fit: contain;
+            }
+
+            .IT {
+                width: 60%;
+            }
+
+            .graphics {
+                width: 30%;
+            }
+
+            h3 {
+                font-family: $bold;
+                margin: 20px 0px 0px;
+                font-size: 20px;
+            }
+
+            .box-text {
+                font-family: $light;
+                font-size: 16px;
+                margin: 15px 0px 25px;
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+
+@media (min-width:768px) {
+
+    .Services {
+
+        span {
+            h2 {
+                font-size: 28px;
+            }
+
+            hr {
+                width: 10%;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            width: 50%;
+            margin: 15px auto 25px;
+        }
+
+        .cards {
+            flex-direction: row;
+            justify-content: space-between;
+
+            .box {
+                width: 30%;
+                padding: 20px 8px;
+                margin: 20px 0px;
+
+                .box-text {
+                    width: 100%;
+                    font-size: 16px;
+                    text-align: center;
+                }
+
+                img {
+                    width: 40%;
+                }
+
+                h3 {
+                    font-size: 22px;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .Services {
+        padding: 6% 30px;
+
+        span {
+            h2 {
+                font-size: 38px;
+            }
+
+            hr {
+                width: 5%;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            width: 50%;
+            margin: 15px auto 25px;
+        }
+
+        .cards {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .box {
+                width: 20%;
+                padding: 25px 30px;
+                margin: 20px 15px;
+                transition: .3s all ease-in-out;
+                cursor: pointer;
+                box-shadow: 17px 16px 37px rgb(66, 65, 65);
+
+                &:hover {
+                    background: linear-gradient(to bottom, #7646df, #33117e);
+                    transform: scale(1.1, 1.1);
+                }
+
+                .box-text {
+                    width: 100%;
+                    font-size: 14px;
+                    text-align: center;
+                }
+
+                img {
+                    width: 45%;
+                }
+
+                .IT {
+                    width: 58%;
+                }
+
+                .graphics {
+                    width: 30%;
+                }
+
+                h3 {
+                    font-size: 22px;
+                }
+
+            }
+
+
+        }
+    }
+}
